@@ -24,7 +24,15 @@ padding: 1%;
     margin-right: auto;
     text-align: center;
     padding-top:10%;
+    
 }
 
+.score-area {
 
 
+    border: solid 1px black;
+    font-size: 36px;
+    display: inline-block;
+    
+
+}
