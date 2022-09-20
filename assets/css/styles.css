@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(218, 247, 88) ;
+    font-family:Roboto Condensed;
+
+}
+
+
+.quiz-box{
+background-color: #E6ECF0;
+border:5px solid black;
+width: 85%;
+height: 65vh;
+max-height: 450px;
+max-width: 830px;
+margin-left: auto;
+margin-right: auto;
+padding: 1%;
+}
+
+.question-area > p {
+
+    font-size:larger;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top:10%;
+}
+
+
+
