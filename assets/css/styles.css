@@ -19,13 +19,22 @@ padding: 1%;
 
 .question-area > p {
 
-    font-size:larger;
+    font-size: 3em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-top:10%;
+    padding-top:5%;
     
 }
+
+.answer-area{
+
+   
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    display: block;
+    }
 
 .score-area {
 
@@ -36,3 +45,22 @@ padding: 1%;
     
 
 }
+
+
+
+.b-start {
+    margin:auto;
+    width: 250px;
+    height: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-color: green;
+    color: green;
+    border-radius: 15%;
+    font-size: 1.2rem;
+    text-align: center;
+    }
+
+
+
+
