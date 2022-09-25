@@ -19,7 +19,7 @@ padding: 1%;
 
 .question-area > p {
 
-    font-size: 3em;
+font-size: 3em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -29,21 +29,22 @@ padding: 1%;
 
 .answer-area{
 
-   
-    margin-left: auto;
-    margin-right: auto;
+    margin : 0 auto ;
     padding: 1%;
     display: block;
+    text-align: center;
     }
 
-.score-area {
+#bstart{
 
+    vertical-align: center;
+}
+
+.score-area {
 
     border: solid 1px black;
     font-size: 36px;
     display: inline-block;
-    
-
 }
 
 

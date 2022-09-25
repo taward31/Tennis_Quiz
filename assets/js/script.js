@@ -68,9 +68,20 @@ switch (qSeq) {
         document.getElementById('bAnswer').textContent = "Rafael Nadal ";
         answer = 2; 
       break;
-    case  6:
-        document.getElementById('question-text').textContent = "Welcome to the Tennis Grand Slam Quiz";
-        answer = 2; 
+
+      case 6:
+        document.getElementById('question-text').textContent = `You Scored ${gCount} out of 5`;
+
+        document.getElementById("bstart").style.display = "block";
+        document.getElementById("aAnswer").style.display = "none";
+        document.getElementById("bAnswer").style.display = "none";
+        document.getElementById('bstart').textContent = "Try Again ?";
+        qSeq = 0 ;
+        gCount = 0;
+        bCount = 0;
+
+      break;
+    
     default :  alert ('Unknown Error Occurred - PLease Restart Game');
 }}
 
