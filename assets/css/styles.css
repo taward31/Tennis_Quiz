@@ -4,7 +4,6 @@ body {
 
 }
 
-
 .quiz-box{
 background-color: #E6ECF0;
 border:5px solid black;
@@ -41,12 +40,36 @@ font-size: 3em;
 }
 
 .score-area {
-
-    border: solid 1px black;
-    font-size: 36px;
-    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    text-align: center;
+    position: relative;
+    top: 2px;
 }
 
+#correct-a {
+
+    display: inline-block;
+    color: #139c04;
+    font-size: 1.5em;
+    position: relative;
+    right: 4%;
+
+    
+}
+
+#incorrect-a {
+    
+    display: inline-block;
+    color: #f61a0a;
+    font-size: 1.5em;
+    position: relative;
+    left: 4%;
+
+    
+
+}
 
 
 .b-start {
