@@ -15,18 +15,14 @@ document.addEventListener("DOMContentLoaded",function(){
         
 })
 
-
-
-
 function myFunction() {
-
-
 
 if (qSeq >(0) ) {
 
 document.getElementById("bstart").style.display = "none";
 document.getElementById("aAnswer").style.display = "inline-block";
 document.getElementById("bAnswer").style.display = "inline-block";}
+document.getElementById("myImageId").src="newSource.png";
 
 
  
@@ -89,9 +85,8 @@ switch (qSeq) {
 function sButton(){
 
     qSeq = qSeq + 1 ;
-    myFunction()
-    logData ();
-    
+    myFunction();
+    logData ();    
     }
 
 function aButton(){
@@ -110,8 +105,7 @@ function bButton(){
         qSeq = qSeq + 1 ;
         myFunction();
         logData ();
-        document.getElementById('correct-a').textContent = `Correct Answers ${gCount}`;
-        document.getElementById('incorrect-a').textContent = `In-Correct Answers ${bCount}`;
+     
     }
 
 
@@ -147,8 +141,6 @@ function logData(){
     console.log(`bad count = ${bCount}`);
     document.getElementById('correct-a').textContent = `Correct :  ${gCount}`;
     document.getElementById('incorrect-a').textContent = `In-Correct :  ${bCount}`;
-
-    
 }
 
 
