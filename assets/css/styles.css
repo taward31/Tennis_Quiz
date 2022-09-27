@@ -4,6 +4,12 @@ body {
 
 }
 
+#q-image{
+
+    max-width: 200px;
+    max-height: 200px;
+}
+
 .quiz-box{
 background-color: #E6ECF0;
 border:5px solid black;
