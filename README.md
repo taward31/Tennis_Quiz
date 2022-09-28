@@ -1,9 +1,9 @@
----
+
 # Tennis Quiz Online Game 
 
 This application was create to test users general knowledge on tennis.  
 
-The page's purpose is to create a fun interaction via the use of questions and score keeping to allow the user to knwo there results. 
+The page's purpose is to create a fun interaction via the use of questions and score keeping to allow the user to know there results at the end. 
 
 The App is designed to be bright, colourful, fun and simple to interact with. This is achieved by some features such as 
 
@@ -132,6 +132,13 @@ Three unused variables
 
 ## W3 code Validator 
 
+This validator was run and some minor errors were rectified. 
+
+## CSS Code Validator Jigsaw
+
+This validator was run and no erros were present.
+
+
 ---
 
 
@@ -144,8 +151,51 @@ Frontend was found to be adequately responsice at the above measuring criteria.
 
 ---
 
-# Browser 
+# Multi Browser Check 
 
 
-Pages checked on multiple broswers namely, Chrome, firefox and Microsoft Edge. 
+Pages checked on multiple broswers namely, Chrome, firefox and Safari.  
 
+
+https://www.w3schools.com/js/js_comparisons.asp
+
+---
+ 
+# Credits 
+
+The following websites/orgs where extremely helpful in assiting with my understanding of what is requried and inspiration for what is the standard for this type of website.
+
+---
+
+## Technical assitance credits 
+
+W3 School
+
+https://www.w3schools.com/js/js_comparisons.asp
+
+https://www.w3schools.com/tags/tag_input.asp
+
+
+Stack Over flow -
+
+https://stackoverflow.com/questions/6115801/how-do-i-test-if-a-variable-does-not-equal-either-of-two-values
+
+https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+
+https://stackoverflow.com/questions/17814926/java-switch-statement
+
+https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+---
+
+## images Credits 
+
+lastwordonsports.com
+lavercup.com 
+tennisoworld.de
+wimbledon.com
+
+---
+
+### Other mentions
+
+Special thanks for Samantha Dartnall for her assistance and guidance throughut the project. 
