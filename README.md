@@ -1,7 +1,33 @@
 
 ---
+Deployement 
 
-J shint - Validator Results 
+
+
+---
+Console Logging Used 
+
+The below Funntion was use to log and track data via the console log -  This allowed me to follow the code and the data creation/flow and esure correct data was being created as the user interacted 
+
+I could use the Sequence step 
+
+function logData(){
+    
+    console.log(`qSeq = ${qSeq}`);
+    console.log(`good count = ${gCount}`);
+    console.log(`bad count = ${bCount}`);
+    document.getElementById('correct-a').textContent = `Correct :  ${gCount}`;
+    document.getElementById('incorrect-a').textContent = `In-Correct :  ${bCount}`;
+}
+
+
+
+
+
+---
+
+
+J shint - Validator Results Initial Report 
 
 CONFIGURE
 Metrics
@@ -29,4 +55,7 @@ Three unused variables
  - 97	sButton
  - 104	aButton
  - 113	bButton
+
+
+
 
