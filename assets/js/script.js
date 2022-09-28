@@ -39,7 +39,7 @@ if (qSeq >(0) && qSeq != (101)  ) {
 document.getElementById("bstart").style.display = "none";
  document.getElementById("aAnswer").style.display = "inline-block";
   document.getElementById("bAnswer").style.display = "inline-block";}
-console.log (`This Ran ${qSeq}`)
+
  
 /* Case Sequence for handling respective actions per step   */
 
@@ -153,7 +153,7 @@ switch (qSeq) {
 
       case 101 : 
 
-      console.log("it worked");
+      
       alert ('Please input Name Prior to Pressing Start');
       qSeq = (0) ;
 
@@ -166,13 +166,9 @@ switch (qSeq) {
 
 function searchform(){
 
-  
-
-  console.log(uname.value);
     userName = (uname.value);
      unameChars = (userName.length); 
-       console.log(`this is unc${unameChars}`);
-   
+      
   }
 
 
@@ -183,21 +179,20 @@ function sButton(){
   
   searchform();
 
-  
+   /* Check for inputted data  */
 
   if ( unameChars === 0 ) {
 
   qSeq = (101) ;
-  console.log(`incorrect_Program${qSeq}`)
-  myFunction();
+   myFunction();
 }
   else {
 
   qSeq = qSeq + 1 ;
-  console.log(`correct_Program${qSeq}`)
    myFunction();
    
   }}
+
 
 
 function aButton(){
@@ -219,6 +214,7 @@ function bButton(){
    
   }
 
+    /* Check Answers and Count Data   */
 
 function chkAnswerA(){
 
