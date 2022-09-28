@@ -4,6 +4,8 @@ let qSeq ;
 let gCount;
 let bCount;
 let answer ; 
+let userName = document.getElementById("uname").value;
+let unameChars = Number;
 
 /* Page start Up Functionality/Loading of Data   */
 
@@ -32,12 +34,12 @@ function myFunction() {
 
 /* Format the buttons Dispaly Depending on the Sequence Steps  */
 
-if (qSeq >(0) ) {
+if (qSeq >(0) && qSeq != (101)  ) {
 
 document.getElementById("bstart").style.display = "none";
  document.getElementById("aAnswer").style.display = "inline-block";
   document.getElementById("bAnswer").style.display = "inline-block";}
-
+console.log (`This Ran ${qSeq}`)
  
 /* Case Sequence for handling respective actions per step   */
 
@@ -115,7 +117,7 @@ switch (qSeq) {
 
       case 6:
         
-        document.getElementById('question-text').textContent = `You Scored ${gCount} out of 5`;
+        
          document.getElementById("bstart").style.display = "block";
           document.getElementById("aAnswer").style.display = "none";
             document.getElementById("bAnswer").style.display = "none";
@@ -123,6 +125,8 @@ switch (qSeq) {
 
         if (gCount > 4 ){
 
+
+      document.getElementById('question-text').textContent = `Well done, ${userName} You Scored ${gCount} out of 5`;
         document.getElementById("q-image").src = "assets/images/win_match.webp";
           document.getElementById("q-image").alt = "Rafa Nadal After winning Tennis Match " ;
            document.getElementById('bstart').textContent = "Replay Quiz ?";
@@ -130,6 +134,7 @@ switch (qSeq) {
 
         else{
 
+      document.getElementById('question-text').textContent = `Unlucky , ${userName} You Scored ${gCount} out of 5`;
         document.getElementById("q-image").src = "assets/images/lose_match.jpeg";
           document.getElementById("q-image").alt = "Rodger Federer and Rafa Nadal Crying " ;
            document.getElementById('bstart').textContent = "Try Again ?";
@@ -139,20 +144,61 @@ switch (qSeq) {
 
 
         qSeq = 0 ;
+        gCount = 0;
+        bCount = 0;
        
 
       break;
+
+
+      case 101 : 
+
+      console.log("it worked");
+      alert ('Please input Name Prior to Pressing Start');
+      qSeq = (0) ;
+
+      break;
+
     
     default :  alert ('Unknown Error Occurred - Please Restart Game');
 }}
 
 
-function sButton(){
+function searchform(){
 
-  qSeq = qSeq + 1 ;
-   myFunction();
+  
+
+  console.log(uname.value);
+    userName = (uname.value);
+     unameChars = (userName.length); 
+       console.log(`this is unc${unameChars}`);
    
   }
+
+
+ /* On click Buttons - Triggered from the Index Page (HTML) */
+
+function sButton(){
+
+  
+  searchform();
+
+  
+
+  if ( unameChars === 0 ) {
+
+  qSeq = (101) ;
+  console.log(`incorrect_Program${qSeq}`)
+  myFunction();
+}
+  else {
+
+  qSeq = qSeq + 1 ;
+  console.log(`correct_Program${qSeq}`)
+   myFunction();
+   
+  }}
+
 
 function aButton(){
 
@@ -176,7 +222,7 @@ function bButton(){
 
 function chkAnswerA(){
 
-    console.log("Check Answer A Run");
+  
 
     if (answer < 2 ) {
 
@@ -188,7 +234,7 @@ function chkAnswerA(){
 
 function chkAnswerB(){
 
-    console.log("Check Answer B Run");
+    
 
     if (answer > 1 ) {
 
